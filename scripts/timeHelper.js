@@ -8,10 +8,6 @@ export class TimeHelper {
         this._time = 0;
     }
 
-    getRotation(rotation) {
-        return rotation / 1550;
-    }
-
     getTimestamp(logDays = false) {
         const now = Date.now();
         const elapsedTime = (now - this._prevTime) / 1000;

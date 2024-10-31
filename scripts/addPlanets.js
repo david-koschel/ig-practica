@@ -166,7 +166,7 @@ export class PlanetHelper {
                 object.userData.f2 *
                 object.userData.dist;
 
-            object.rotation.y = this._timeHelper.getRotation(object.userData.rotation);
+            object.rotation.y = object.userData.rotation * timestamp;
         }
 
         for (let object of this.Lunas) {
@@ -179,4 +179,4 @@ export class PlanetHelper {
 }
 
 const EARTH_TRASLATION_IN_SECOND = Math.PI * 2 / (365 * 86400);
-const EARTH_ROTATION_IN_DAYS = Math.PI * 2;
+const EARTH_ROTATION_IN_DAYS = Math.PI * 2 / 86400;
