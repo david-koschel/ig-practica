@@ -54,10 +54,10 @@ export class PlanetHelper {
 
     randomPlanet(dist) {
         this.PlanetaColor(
-            THREE.MathUtils.randFloat(.1, .8),
+            THREE.MathUtils.randFloat(.1, 1.5) * dist / 20,
             dist,
-            THREE.MathUtils.randFloat(-3, 3),
-            THREE.MathUtils.randFloat(-3, 3),
+            THREE.MathUtils.randFloat(EARTH_TRASLATION_IN_SECOND / 5, EARTH_TRASLATION_IN_SECOND * 3),
+            THREE.MathUtils.randFloat(-EARTH_ROTATION_IN_DAYS / 5, EARTH_ROTATION_IN_DAYS * 5),
             1,
             1,
             THREE.MathUtils.randInt(0, 0xffffff)
@@ -65,8 +65,10 @@ export class PlanetHelper {
     }
 
     PlanetaColor(radio, dist, vel, rot, f1, f2, col = 0xffffff) {
+        const randomPlanetTxt = new THREE.TextureLoader().load(`textures/planet${THREE.MathUtils.randInt(1, 4)}.png`);
         const mat = new THREE.MeshPhongMaterial({
             color: col,
+            map: randomPlanetTxt
         });
         this._generatePlanet(mat, radio, dist, vel, rot, f1, f2, this._scene)
     }

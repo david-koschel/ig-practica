@@ -54,7 +54,7 @@ function animationLoop() {
 }
 
 function onDocumentMouseDown(event) {
-    if (!addPlanets) return;
+    if (!addPlanets || event.button !== 0) return;
     rayCaster.intersect(event, camera, dist => planetHelper.randomPlanet(dist))
 }
 
