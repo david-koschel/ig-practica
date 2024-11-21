@@ -3,7 +3,7 @@ const ONE_YEAR_PER_SECOND = ONE_DAY_PER_SECOND * 365.25
 
 export class TimeHelper {
     constructor() {
-        this.changeSpeed("DAY");
+        this.changeSpeed("HOUR");
         this._prevTime = Date.now();
         this._time = 0;
     }

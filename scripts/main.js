@@ -33,10 +33,6 @@ function init() {
     timeHelper = new TimeHelper(timeHelper);
     planetHelper = new PlanetHelper(scene, timeHelper);
     planetHelper.Estrella(1.8, 0xffff00)
-    const light = new THREE.PointLight(0xffffff, 2, 1000);
-    scene.add(light);
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.02); // Soft white light
-    scene.add(ambientLight);
     rayCaster = new RayCaster(scene, renderer);
     textHelper = new TextHelper(controlHelper);
 

@@ -1,17 +1,13 @@
-# Práctica S8
+# Práctica S9
 
 > Autor:
 > - David Koschel Henríquez
 
 ## Descripción
 
-En esta práctica se añadieron **5 planetas del Sistema Solar**, incluyendo sus texturas, periodo de traslación y
-rotación correspondientes. Además, se implementan las siguientes funcionalidades:
-
-- **Alternar entre vistas:** Puedes cambiar entre la vista de nave y la vista general.
-- **Añadir planetas:** Existe un modo para añadir nuevos planetas al sistema.
-- **Acelerar el tiempo:** Puedes modificar la velocidad de la simulación para observar el movimiento de los planetas en
-  tiempo acelerado.
+En esta práctica se modificó el sistema solar de la práctica anterior para que emplease shaders, con esto se consiguió
+una luz más realista, la posibilidad de hacer texturas mixtas y también añadir filtros de color a los distintos
+planetas.
 
 ## Recursos Utilizados
 
