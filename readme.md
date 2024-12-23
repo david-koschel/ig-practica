@@ -6,8 +6,8 @@
 ## Descripción
 
 En esta práctica se modificó el sistema solar de la práctica anterior para que emplease shaders, con esto se consiguió
-una luz más realista, la posibilidad de hacer texturas mixtas y también añadir filtros de color a los distintos
-planetas.
+una luz más realista, la posibilidad de hacer texturas mixtas (día y noche en la tierra) y también añadir filtros de color a los distintos
+planetas que son añadidos manualmente.
 
 ## Recursos Utilizados
 
